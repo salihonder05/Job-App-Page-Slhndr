@@ -47,6 +47,16 @@ function jobappslhndr_frontend_shortcode_en()
 			<input name="address" type="text" placeholder="Where do you live?" class="jas_input">
 			<input name="tr_working_auth" type="text" placeholder="Are you authorized to work in Turkey?" class="jas_input">
 			<input name="remote_work" type="text" placeholder="Are you open to working remotely?" class="jas_input">
+			
+			
+			<select name="which_location" required="true" type="text" placeholder="Which location do you prefer to be based in?"
+				class="jas_input">
+				<option selected disabled value="Which location do you prefer to be based in?">Which location do you prefer to be based in?</option>
+				<option value="London Based">London Based</option>
+				<option value="İstanbul Based">İstanbul Based</option>
+			</select>
+			
+			
 
 			<select name="experience_period" required="true" type="text" placeholder="How many years of experience do you have?"
 				class="jas_input">
@@ -56,6 +66,9 @@ function jobappslhndr_frontend_shortcode_en()
 				<option value="3-7 Years">3-7 Years</option>
 				<option value="7+ Years">7+Years</option>
 			</select>
+			<textarea name="working_option_remotely" id="working_option_remotely" cols="30" rows="10" class="jas_textarea"
+				placeholder="Do you have relevant working experience? List your experience."></textarea>
+				
 			<textarea name="english_level" id="english_level" cols="30" rows="10" class="jas_textarea"
 				placeholder="How proficient are you in English? Where did you learn English?"></textarea>
 
@@ -115,8 +128,7 @@ function jobappslhndr_frontend_shortcode_en()
 
 			<textarea name="why_want_work_eea" id="why_want_work_eea" cols="30" rows="10" class="jas_textarea"
 				placeholder="Why do you want to work with EAA?"></textarea>
-			<textarea name="working_option_remotely" id="working_option_remotely" cols="30" rows="10" class="jas_textarea"
-				placeholder="Do you have relevant working experience? List your experience."></textarea>
+			
 			<h4>Attachments</h4>
 			<hr>
 
