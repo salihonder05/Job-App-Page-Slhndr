@@ -117,6 +117,7 @@ function jobapps_basvuru_subpage_callback()
 				$post_single_meta_address = get_post_meta( $post_single->ID, 'address', true );
 				$post_single_meta_tr_working_auth = get_post_meta( $post_single->ID, 'tr_working_auth', true );
 				$post_single_meta_remote_work = get_post_meta( $post_single->ID, 'remote_work', true );
+				$post_single_meta_which_location = get_post_meta( $post_single->ID, 'which_location', true );
 				$post_single_meta_experience_period = get_post_meta( $post_single->ID, 'experience_period', true );
 				$post_single_meta_english_level = get_post_meta( $post_single->ID, 'english_level', true );
 				$post_single_meta_sketchup = get_post_meta( $post_single->ID, 'sketchup', true );
@@ -183,6 +184,13 @@ function jobapps_basvuru_subpage_callback()
 								<td>Are you open to working remotely?</td>
 								<td>'. $post_single_meta_remote_work . '</td>
 							</tr>
+							
+							<tr>
+								<td>Which location do you prefer to be based in?</td>
+								<td>'. $post_single_meta_which_location . '</td>
+							</tr>
+							
+							
 						
 							<tr>
 								<td>How many years of experience do you have?</td>
